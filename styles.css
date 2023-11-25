@@ -1,0 +1,108 @@
+body{
+    text-align: center; /* It works mainly for "inline" elements inside itself */
+    font-family: 'Happy Monkey', cursive;
+    /* background-color: #a2d2ff; */
+    background: linear-gradient(rgb(126, 126, 239), rgb(242, 144, 161));
+    color: #ffffff;
+}
+
+#img-of-nick{
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+}
+
+h1, h2, h3, h4{
+    /* we can write the same properties to multiple elements like this*/
+    text-shadow: 0px 0px 1px black;
+}
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* if we don't apply that, h2 and h4 became stretched*/
+}
+
+.gift-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gift-title{
+    margin-bottom: 10px;
+}
+
+.gift-hint{
+    margin-top: 0;
+}
+
+.gift-img{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover{
+    background-image: url("images/happy.gif");
+    background-size: cover;
+}
+
+#gift-img-react:hover{
+    background-image: url("images/hot.gif");
+    background-size: cover;
+}
+
+#gift-img-word:hover{
+    background-image: url("images/genius.gif");
+    background-size: cover;
+}
+
+#gift-img-badass:hover{
+    background-image: url("images/shelby.gif");
+    background-size: cover;
+}
+
+#gift-img-cheers{
+    height: 200px;
+    /* "The more specific the more prioritized" 
+        200px height will override the general height of the gift
+        img class.    
+    */
+}
+
+
+#gift-img-cheers:hover{
+    background-image: url("images/cheers.gif");
+    background-size: cover;
+}
+
+footer{
+    margin: 40px auto;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 500;
+}
+a{
+    color: white;
+}
